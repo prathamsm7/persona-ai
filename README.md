@@ -1,4 +1,4 @@
-# PersonaAI - Programming Expert Chat
+# PersonaAI - Programming Expert Chat [Live Demo](https://persona-ai-six-plum.vercel.app/)
 
 A Next.js application that mimics the personas of popular programming educators **Hitesh Choudhary** and **Piyush Garg** to answer programming questions in their unique styles.
 
