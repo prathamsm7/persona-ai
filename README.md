@@ -115,30 +115,32 @@ npm start
 
 ```
 persona-ai/
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   └── chat/
-│   │   │       └── route.ts          # Chat API with CoT implementation
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx                  # Main page
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts              # Chat API with CoT implementation
 │   ├── components/
 │   │   └── Chat.tsx                  # Main chat component
-│   └── lib/
-│       └── personas.ts               # Persona definitions with CoT prompts
-├── DATA_SOURCES.md                    # Data sources documentation
-├── SAMPLE_DATA.md                     # Sample responses and tone analysis
-├── CHAIN_OF_THOUGHT_IMPLEMENTATION.md # CoT implementation details
-├── PROMPT_LOGIC.md                    # Prompt logic documentation
+│   ├── lib/
+│   │   └── personas.ts               # Persona definitions with CoT prompts
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx                      # Main page
+│   └── favicon.ico
+├── public/                            # Static assets
 ├── README.md                          # This file
-└── package.json
+├── package.json
+├── tailwind.config.ts                 # Tailwind CSS configuration
+├── postcss.config.mjs                 # PostCSS configuration
+├── tsconfig.json                      # TypeScript configuration
+├── next.config.ts                     # Next.js configuration
+└── eslint.config.mjs                  # ESLint configuration
 ```
 
 ## 🔧 Configuration
 
 ### Persona Customization
-Edit `src/lib/personas.ts` to:
+Edit `app/lib/personas.ts` to:
 - Modify persona characteristics
 - Add new personas
 - Update response styles
@@ -189,10 +191,10 @@ Edit `src/lib/personas.ts` to:
 ## 🎨 Customization
 
 ### Adding New Personas
-1. Add persona data to `src/lib/personas.ts`
+1. Add persona data to `app/lib/personas.ts`
 2. Include characteristics, common phrases, and expertise
 3. Define CoT reasoning patterns
-4. Update the persona selection UI in `src/components/Chat.tsx`
+4. Update the persona selection UI in `app/components/Chat.tsx`
 
 ### Modifying CoT Implementation
 1. Edit CoT instructions in `getPersonaPrompt()`
