@@ -208,14 +208,6 @@ Edit `app/lib/personas.ts` to:
 3. Add new UI components as needed
 4. Enhance user experience features
 
-## 🚨 Important Notes
-
-- **API Costs**: OpenAI API usage incurs costs based on token usage
-- **Rate Limits**: Be mindful of OpenAI API rate limits
-- **Content**: Responses are AI-generated and should be verified for accuracy
-- **Privacy**: User messages are sent to OpenAI for processing
-- **CoT Benefits**: Internal reasoning improves response quality without affecting user experience
-
 ## 🤝 Contributing
 
 1. Fork the repository
