@@ -129,6 +129,7 @@ persona-ai/
 │   └── favicon.ico
 ├── public/                            # Static assets
 ├── README.md                          # This file
+├── SAMPLE_CHATS.md                    # Sample conversations for both personas
 ├── package.json
 ├── tailwind.config.ts                 # Tailwind CSS configuration
 ├── postcss.config.mjs                 # PostCSS configuration
@@ -187,6 +188,15 @@ Edit `app/lib/personas.ts` to:
 3. **Internal CoT Processing**: AI thinks through the problem systematically
 4. **Response Generation**: Final answer generated in persona style
 5. **Display**: Only the polished response shown to user
+
+## 💬 Sample Conversations
+
+See `SAMPLE_CHATS.md` for detailed examples of how each persona responds to programming questions. The samples demonstrate:
+
+- **Hitesh's Style**: Energetic, Hinglish mix, practical examples, motivational tone
+- **Piyush's Style**: Structured, detailed, best practices focused, systematic approach
+- **Technical Depth**: Both personas provide comprehensive programming guidance
+- **Personality Consistency**: Each maintains their unique characteristics throughout conversations
 
 ## 🎨 Customization
 
